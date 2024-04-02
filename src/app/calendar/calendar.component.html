@@ -1,0 +1,5 @@
+<div id="timePickerOverlay" #timePickerOverlay [style.left.px]="timePickerPosition.left" [style.top.px]="timePickerPosition.top" style="display: none;">
+    <input type="time" id="eventTime" placeholder="Select time" (change)="handleTimeChange()">
+</div>
+
+<full-calendar [options]="calendarOptions"></full-calendar>

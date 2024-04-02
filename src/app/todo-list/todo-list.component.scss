@@ -1,0 +1,83 @@
+.todo-list-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-input {
+  width: calc(100% - 100px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ajusta el ancho a 100% para ocupar todo el contenedor */
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+}
+
+.task-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.task-content span {
+  font-size: 16px;
+}
+
+.delete-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e55d3b;
+}
+
+.task-item.completed .task-content span {
+  text-decoration: line-through;
+}
+.add-button {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
